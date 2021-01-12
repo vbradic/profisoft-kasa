@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset = "UTF-8">
+      <title>Hello World!</title>
+      <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="node_modules/select2/dist/css/select2.min.css">
+      <link rel="stylesheet" href="./style.css">
+
+      
+
+   </head>
+   
+   <body>
+      <div class = "container">
+
+         <select id="color-select" class="form-control" style="margin-top:100px;">
+            <option value="" selected hidden>--select color--</option>
+            <option></option>  
+         </select>
+           
+
+         <h1>This page is using Bootstrap and jQuery!</h1>
+         <h3 id = "click-counter"></h3>
+         <button class = "btn btn-success" id = "countbtn">Click here</button>
+         
+
+         <script src = "./view.js" ></script>
+         <script>
+            
+            $(document).ready(function(){
+               var colorList=["orange","white","red"];
+               $("#color-select").select2({
+                  data:colorList
+               });
+            });
+         </script>
+         
+      </div>
+   </body>
+</html>
