@@ -10,9 +10,19 @@
   "license": "ISC",
   "dependencies": {
     "@popperjs/core": "^2.6.0",
-    "bootstrap": "^4.5.3",
+    "bootstrap": "4.5.3",
+    "bootstrap-autocomplete": "^2.3.7",
+    "bootstrap-select": "^1.13.18",
     "jquery": "^3.5.1",
     "js-datepicker": "^5.17.0",
+    "mysql": "^2.18.1",
     "select2": "^4.0.13"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.13",
+    "@babel/core": "^7.12.13",
+    "@babel/node": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "@babel/register": "^7.12.13"
   }
 }

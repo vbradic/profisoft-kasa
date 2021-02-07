@@ -4,37 +4,55 @@
       <meta charset = "UTF-8">
       <title>Hello World!</title>
       <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+      
       <link rel="stylesheet" href="node_modules/select2/dist/css/select2.min.css">
       <link rel="stylesheet" href="./style.css">
-
       
 
    </head>
    
    <body>
       <div class = "container">
+<br>
+         <div class="row">
+            <div class="col-sm-4">
+               <!--<select id="color-select" class="form-control" style="margin-top:100px;">
+                  <option value="" selected hidden></option>
+                  <option></option> 
+               </select>-->
 
-         <select id="color-select" class="form-control" style="margin-top:100px;">
-            <option value="" selected hidden>--select color--</option>
-            <option></option>  
-         </select>
-           
+               <div class="autocomplete" style="width:300px;">
+                  <input id="myInput" type="text" name="myCountry" placeholder="Country">
+               </div>
 
-         <h1>This page is using Bootstrap and jQuery!</h1>
-         <h3 id = "click-counter"></h3>
-         <button class = "btn btn-success" id = "countbtn">Click here</button>
-         
+            </div>
+         </div>
 
-         <script src = "./view.js" ></script>
-         <script>
             
-            $(document).ready(function(){
-               var colorList=["orange","white","red"];
-               $("#color-select").select2({
-                  data:colorList
-               });
-            });
-         </script>
+         
+<!--<br>
+         <div class="row">
+            <div class="col-sm-4">
+               <select id="color-select2" class="form-control" style="margin-top:100px;">
+                  <option value="" selected hidden></option>
+                  <option></option>  
+               </select>
+            </div>
+         </div>
+<br>-->
+         <!--<div class="row">
+            <div class="col-sm-4">
+               <select class="selectpicker" data-live-search="true">
+                  <option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
+                  <option data-tokens="mustard">Burger, Shake and a Smile</option>
+                  <option data-tokens="frosting">Sugar, Spice and all things nice</option>
+               </select>
+
+            </div> -->
+         </div> 
+           
+         <!--<script src = "./db/mysqlConnection.js"></script>-->
+         <script src = "./data/getArtikli.js"></script>
          
       </div>
    </body>
